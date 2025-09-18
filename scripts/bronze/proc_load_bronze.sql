@@ -1,3 +1,18 @@
+/* 
+
+Stored Procedure: load bronze layer (SOURCE -> Bronze)
+
+This stored procedure loads data into the 'bronze' schem from external CSV files.
+It performs the followign actions:
+    truncates the bronze tables before loading data. 
+    uses the 'BULK INSERT' command to load data from csv Files to bronze tables.
+
+Usage Example:
+    
+    EXEC Bronze.load_bronze
+
+*/
+
 CREATE OR ALTER PROCEDURE Bronze.load_bronze AS
 BEGIN
     DECLARE @start_time DATETIME, @end_time DATETIME, @batch_start_time DATETIME, @batch_end_time DATETIME;
