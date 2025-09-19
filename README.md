@@ -26,3 +26,47 @@ Git: For version control and collaboration.
 SQL Functions: Including window functions (e.g., ROW_NUMBER, LEAD), string manipulations (e.g., TRIM, SUBSTRING), and case statements for data transformations.
 
 No additional libraries or tools are required beyond a standard SQL Server installation.
+
+# Data Layers
+
+## Bronze Layer
+The Bronze layer handles raw data ingestion from source systems (e.g., CSV files).
+
+Key Steps:
+
+- Analyze source data for business context, ownership, and technical details.
+- Use BULK INSERT for loading CSV data into staging tables.
+- Implement full load processes (truncate and insert) with error handling.
+- Create stored procedures for data loading, including duration tracking and output messaging.
+
+
+Scripts: Located in scripts/bronze/.
+Tables: Named like CRM_customer_info following conventions.
+
+## Silver Layer
+The Silver layer focuses on data cleansing and transformation to address quality issues.
+
+Key Steps:
+
+- Perform data quality checks (e.g., uniqueness, trimming, consistency).
+- Handle duplicates, nulls, inconsistencies using SQL functions (e.g., ROW_NUMBER for deduplication, CASE for standardization).
+- Apply business rules (e.g., validate sales calculations, handle negative values).
+- Load transformed data into Silver tables via stored procedures.
+
+
+Scripts: Located in scripts/silver/.
+Transformations: Includes date range validation, string cleaning, and derived columns.
+
+## Gold Layer
+The Gold layer builds a star schema for analytics, integrating data from Silver.
+
+Key Steps:
+
+- Create views for Dimension and Fact tables.
+- Generate surrogate keys and perform final transformations.
+- Add integrity checks (e.g., primary key uniqueness).
+- Ensure data model connectivity for reporting tools.
+
+
+Scripts: Located in scripts/gold/.
+Output: Ready for BI tools like Power BI or Tableau.
