@@ -12,10 +12,11 @@ The project is inspired by a hands-on tutorial and is designed to handle data fr
 
 The repository is organized as follows:
 
-datasets/: Contains sample CSV files used for data ingestion.
-documents/: Includes diagrams (e.g., data flow, architecture), data catalogs, and other project documentation.
-scripts/: SQL scripts for creating schemas, tables, stored procedures, and views.
-tests/: Scripts for data quality checks and validation.
+- datasets/: Contains sample CSV files used for data ingestion.
+- documents/: Includes diagrams (e.g., data flow, architecture), data catalogs, and other project documentation.
+- scripts/: SQL scripts for creating schemas, tables, stored procedures, and views.
+- tests/: Scripts for data quality checks and validation.
+
 README.md: This file, providing project overview and instructions.
 
 ## Technologies Used
