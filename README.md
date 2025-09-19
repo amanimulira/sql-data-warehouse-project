@@ -70,3 +70,8 @@ Key Steps:
 
 Scripts: Located in scripts/gold/.
 Output: Ready for BI tools like Power BI or Tableau.
+
+# Data Integration Model
+
+<img width="938" height="572" alt="Pasted Graphic 31" src="https://github.com/user-attachments/assets/63c029ec-c0c5-4065-a25e-0a351adbf517" />
+
