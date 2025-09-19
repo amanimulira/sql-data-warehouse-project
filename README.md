@@ -75,3 +75,7 @@ Output: Ready for BI tools like Power BI or Tableau.
 
 <img width="938" height="572" alt="Pasted Graphic 31" src="https://github.com/user-attachments/assets/63c029ec-c0c5-4065-a25e-0a351adbf517" />
 
+# Star Schema ( End Result )
+
+![star schema](https://github.com/user-attachments/assets/a3887bf0-edbf-42ce-a893-56cc379cfccf)
+
