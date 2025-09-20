@@ -77,5 +77,8 @@ Output: Ready for BI tools like Power BI or Tableau.
 
 # Star Schema ( End Result )
 
+This is the most refined layer, containing highly structured, aggregated, and business-ready datasets. Data is modeled and aggregated to meet specific 
+business requirements, enabling efficient reporting, dashboarding, and decision-making across the organization
+
 ![star schema](https://github.com/user-attachments/assets/a3887bf0-edbf-42ce-a893-56cc379cfccf)
 
